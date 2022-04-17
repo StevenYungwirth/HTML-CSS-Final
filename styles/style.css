@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Noto+Sans&display=swap');
+body
+{
+	background-color:#0d162f;
+	font-family: 'Lora', 'Times New Roman', serif;
+	margin: 0px auto;
+	width:1200px;
+}
+
+header
+{
+	background-color: #ec3441;
+	background-color: #ff4530;
+	height: 420px;
+	position: relative;
+	width:1200px;
+}
+
+#headerimg
+{
+	border-radius:8px;
+	height: auto;
+	width: 1186px;
+	margin: 7px;
+}
+
+#headertitle
+{
+	background-color: #226ea666;
+	font-size: 52px;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 7px;
+	position: absolute;
+	top: 50px;
+	left: 7px;
+	height: 70px;
+	width: 1186px;
+}
+
+nav
+{
+	background-color: #226ea6; 
+	float:left;
+	font-family: 'Noto Sans', sans-serif;
+	padding-bottom: 30px;
+	width:230px;
+}
+
+nav ul
+{
+	background-color: #ec3441;
+	background-color: #ff4530;
+	margin-top: 30px;
+	padding: 20px 0px;
+}
+
+nav ul li
+{ 	
+	font-size: 22px;
+	font-weight: bold;
+	list-style-type:none;
+	margin: 2px 0px;
+	text-align:center;
+	width; 230px;
+}
+
+nav ul li a
+{
+	display: block;
+	padding: 3px 0px;
+	width: 230px;
+}
+
+nav ul li a:link
+{
+	color: black;
+	text-decoration: none;
+}
+
+nav ul li a:hover
+{
+	background-color: #f3e328;
+}
+
+nav ul li a:visited
+{
+	color: #000000;
+}
+
+ol
+{
+	padding-left: 20px;
+}
+
+ol li
+{
+	list-style-position: inside;
+	margin-bottom: 5px;
+}
+
+ol li:first-child
+{
+	list-style-image: url('../images/numbers/1.png');
+}
+
+ol li:nth-child(2)
+{
+	list-style-image: url('../images/numbers/2.png');
+}
+
+ol li:nth-child(3)
+{
+	list-style-image: url('../images/numbers/3.png');
+}
+
+ol:last-child
+{
+	margin-bottom: 0;
+}
+
+main
+{
+	background-color:#e8ebf2;
+	font-size: 18px;
+	text-align: justify;
+	float:left;
+	padding: 30px 0 0 20px;
+	width: 950px;
+}
+
+h2
+{
+	margin-bottom: 5px;
+}
+
+h3
+{
+	margin-bottom: 0;
+}
+
+table
+{
+	background-color: #edeef2;
+	border: 3px double #bec9e3;
+	border-spacing: 0px;
+	padding: 5px;
+}
+
+th
+{
+	border-bottom: 1px solid #0d162f;
+	border-right: 1px solid #0d162f;
+	padding-left: 5px;
+	text-align: left;
+}
+
+td
+{
+	border-bottom: 1px dashed #0d162f;
+	border-right: 1px solid #0d162f;
+	padding: 2px 5px 2px 5px;
+}
+
+th:last-child
+{
+	border-right: none;
+}
+
+td:last-child
+{
+	border-right: none;
+}
+
+.lastrow
+{
+	border-bottom: none;
+}
+
+.innerborder
+{
+	border-right: 1px solid #000000;
+}
+
+form
+{
+	width: 400px;
+}
+
+fieldset
+{
+	border: none;
+	width: 400px;
+}
+
+label
+{
+	float: left;
+	margin-right: 5px;
+	margin-top: 10px;
+	text-align: right;
+	width: 100px;
+}
+
+input
+{
+	margin: 10px 0;
+	width: 150px;
+}
+
+textarea
+{
+	height: 150px;
+	width: 250px;
+}
+
+.button
+{
+	margin-left: 10px;
+	height: 30px;
+	width: 100px;
+}
+
+#buttonarea
+{
+	text-align: center;
+}
+
+footer
+{
+	background-color: #182653;
+	color: #ffffff;
+	float: left;
+	padding: 10px;
+	height: 200px;
+	width: 1180px;
+}
+
+.homeheight
+{
+	height: 500px;
+}
+
+.macroheight
+{
+	height: 1000px;
+}
+
+.investheight
+{
+	height: 1300px;
+}
+
+.musicheight
+{
+	height: 1090px;
+}
+
+.aboutheight
+{
+	height: 670px;
+}
+
+.contactheight
+{
+	height: 500px;
+}
+
+.firstpara
+{
+	margin-top: 0px;
+}
+
+#lastpara
+{
+	margin-bottom: 0px;
+}
+
+#mainpicture
+{
+	float: right;
+	position: relative;
+	height: 500px; 
+	width: auto;
+}
+
+#footnote
+{
+	font-size: 14px;
+	font-style: italic;
+	margin-top: 30px;
+}
+
+.musicpicture
+{
+	border-radius: 8px 0 0 8px;
+	float: right;
+	position: relative;
+	width: 270px;
+}
+
+.aboutpicture
+{
+	float: right;
+	margin-left: 30px;
+	width: 300px;
+}
+
+#withpicture
+{
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	width: 630px;
+}
+
+#textonly
+{
+	float: left;
+	padding-right: 50px;
+	padding-bottom: 30px;
+	width: 900px;
+}

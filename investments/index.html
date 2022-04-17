@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../styles/style.css">
+<link rel="stylesheet" media="print" href="../styles/print.css">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+<title>Steven Yungwirth - Investments</title>
+
+<body>
+ <header>
+  <img id="headerimg" src="../images/header.jpg">
+  <div id="headertitle">Steven Yungwirth</div>
+ </header>
+ 
+ <nav class="investheight">
+  <ul>
+   <li><a href="../index.html">Home</a></li>
+   <li><a href="../macros/index.html">VBA Macros</a></li>
+   <li><a href="../investments/index.html">Investments</a></li>
+   <li><a href="../music/index.html">Music</a></li>
+   <li><a href="../about/index.html">About Me</a></li>
+   <li><a href="../contact/index.html">Contact</a></li>
+  </ul>
+ </nav>
+ 
+ <main class="investheight">
+	<div id="textonly">
+		<h1>Investment Scores</h1>
+		<p>Another side project I created and still maintain at my current position is a scoring system for ETFs and mutual funds. When my colleagues researched funds, I saw them look at several data points for each fund and try to combine all of these distinct values and mentally make a picture of how the fund performs overall. The objective of the system I created is to combine those data points - return, standard deviation, yield, expense ratio, etc - into one easily digestible number, centered around zero.</p>
+		<h2>List Structure</h2>
+		<p class="firstpara">Our company primarily uses TD Ameritrade as a custodian, so the only mutual funds used in the list are their commission-free mutual funds. In September of 2019, TD Ameritrade removed commission fees from ETFs and stocks, so all United States ETFs in Morningstar’s database (the data source I use) are used. As of 11/30/2019, there are 6,239 such mutual funds and 2,391 such ETFs overall.</p>
+		<h3>Scoring</h3>
+		<p class="firstpara">For each of the data points used, an individual score is calculated<sup><a href="#footnote" title="Many of the data points used match other data points, but with a different trailing period (e.g. 15-year annualized return and 1-year return are both used). For these elements, only one score comprising each trailing period is obtained instead of a separate score for each trailing period. The calculations for these scores use each trailing period, but are designed to place a higher emphasis on the period with the longer history. As an example, the total Return score places the heaviest weight on 15-year annualized return, less of a weight on 10-year annualized return, even less of a weight on 5-year annualized return, etc. This helps get a fuller picture of the investment while not completely ruling out its recent performance.">1</a></sup>, with the average set to be zero. These individual scores are then summed to return to total score of the fund. Because each element of the score is centered around zero, the final score is as well.</p>
+		<h2>Top Investments</h2>
+		<p class="firstpara">The table below lists only funds whose primary holdings are US stocks, and it shows the top 15 funds in this system and their respective scores, as of 11/30/2019. As of this date, the standard deviation of the score for all 8,630 funds is 3.314, so these funds range from 1.92 to 2.27 standard deviations above average.</p>
+		<table>
+			<tr>
+				<th>Investment Name</th>
+				<th>Ticker</th>
+				<th>Score</th>
+			</tr>
+			<tr>
+				<td>Vanguard Dividend Appreciation ETF</td>
+				<td>VIG</td>
+				<td>7.539</td>
+			</tr>
+			<tr>
+				<td>SPDR® Portfolio S&P 500 Growth ETF</td>
+				<td>SPYG</td>
+				<td>7.098</td>
+			</tr>
+			<tr>
+				<td>SPDR® SSGA US Large Cap Low Volatil ETF</td>
+				<td>LGLV</td>
+				<td>6.922</td>
+			</tr>
+			<tr>
+				<td>Vanguard Mid-Cap ETF</td>
+				<td>VO</td>
+				<td>6.862</td>
+			</tr>
+			<tr>
+				<td>iShares Core S&P US Growth ETF</td>
+				<td>IUSG</td>
+				<td>6.852</td>
+			</tr>
+			<tr>
+				<td>Vanguard High Dividend Yield ETF</td>
+				<td>VYM</td>
+				<td>6.839</td>
+			</tr>
+			<tr>
+				<td>Invesco High Yield Eq Div Achiev™ ETF</td>
+				<td>PEY</td>
+				<td>6.709</td>
+			</tr>
+			<tr>
+				<td>iShares Edge MSCI Min Vol USA ETF</td>
+				<td>USMV</td>
+				<td>6.705</td>
+			</tr>
+			<tr>
+				<td>Vanguard Value ETF</td>
+				<td>VTV</td>
+				<td>6.587</td>
+			</tr>
+			<tr>
+				<td>SPDR® Portfolio Large Cap ETF</td>
+				<td>SPLG</td>
+				<td>6.561</td>
+			</tr>
+			<tr>
+				<td>First Trust Value Line® Dividend ETF</td>
+				<td>FVD</td>
+				<td>6.490</td>
+			</tr>
+			<tr>
+				<td>American Funds American Mutual R5</td>
+				<td>RMFFX</td>
+				<td>6.470</td>
+			</tr>
+			<tr>
+				<td>Vanguard Mega Cap ETF</td>
+				<td>MGC</td>
+				<td>6.468</td>
+			</tr>
+			<tr>
+				<td>American Funds Washington Mutual R5</td>
+				<td>RWMFX</td>
+				<td>6.369</td>
+			</tr>
+			<tr>
+				<td class="lastrow">Vanguard Total Stock Market ETF</td>
+				<td class="lastrow">VTI</td>
+				<td class="lastrow">6.361</td>
+			</tr>
+		</table>
+		<p id="footnote">1. Many of the data points used match other data points, but with a different trailing period (e.g. 15-year annualized return and 1-year return are both used). For these elements, only one score comprising each trailing period is obtained instead of a separate score for each trailing period. The calculations for these scores use each trailing period, but are designed to place a higher emphasis on the period with the longer history. As an example, the total Return score places the heaviest weight on 15-year annualized return, less of a weight on 10-year annualized return, even less of a weight on 5-year annualized return, etc. This helps get a fuller picture of the investment while not completely ruling out its recent performance.</p>
+	</div>
+ </main>
+ 
+ <footer>
+  Copyright &copy; 2019 Steven Yungwirth
+ </footer>
+</body>
+
+</html>

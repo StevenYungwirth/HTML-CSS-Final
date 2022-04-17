@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../styles/style.css">
+<link rel="stylesheet" media="print" href="../styles/print.css">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+<title>Steven Yungwirth - Contact</title>
+
+<body>
+ <header>
+  <img id="headerimg" src="../images/header.jpg">
+  <div id="headertitle">Steven Yungwirth</div>
+ </header>
+ 
+ <nav class="contactheight">
+  <ul>
+   <li><a href="../index.html">Home</a></li>
+   <li><a href="../macros/index.html">VBA Macros</a></li>
+   <li><a href="../investments/index.html">Investments</a></li>
+   <li><a href="../music/index.html">Music</a></li>
+   <li><a href="../about/index.html">About Me</a></li>
+   <li><a href="../contact/index.html">Contact</a></li>
+  </ul>
+ </nav>
+ 
+ <main class="contactheight">
+	<div id="textonly">
+		<h1>Contact Me</h1>
+		<p>If you would like to get in touch with me, please fill out the form below. Alternatively, feel free to email me <a href="mailto:stevenyungwirth@gmail.com">here</a>.</p>
+		<form name="contact" id="contact" method="post" action="https://webdevbasics.net/scripts/demo.php">
+			<fieldset>
+				<label for="fullname">Name:</label><input type="text" name="fullname" id="fullname" required="required"><br>
+				<label for="email">Email:</label><input type="text" name="email" id="email" required="required"><br>
+				<label for="message">Message:</label><textarea name="message" id="message"></textarea>
+			</fieldset>
+			
+			<div id="buttonarea">
+				<input class="button" type="submit">
+				<input class="button" type="reset" value="Clear">
+			</div>
+		</form>
+	</div>
+ </main>
+ 
+ <footer>
+  Copyright &copy; 2019 Steven Yungwirth
+ </footer>
+</body>
+
+</html>

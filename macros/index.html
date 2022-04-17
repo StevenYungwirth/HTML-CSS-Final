@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../styles/style.css">
+<link rel="stylesheet" media="print" href="../styles/print.css">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+<title>Steven Yungwirth - Macros</title>
+
+<body>
+ <header>
+  <img id="headerimg" src="../images/header.jpg">
+  <div id="headertitle">Steven Yungwirth</div>
+ </header>
+ 
+ <nav class="macroheight">
+  <ul>
+   <li><a href="../index.html">Home</a></li>
+   <li><a href="../macros/index.html">VBA Macros</a></li>
+   <li><a href="../investments/index.html">Investments</a></li>
+   <li><a href="../music/index.html">Music</a></li>
+   <li><a href="../about/index.html">About Me</a></li>
+   <li><a href="../contact/index.html">Contact</a></li>
+  </ul>
+ </nav>
+ 
+ <main class="macroheight">
+	<div id="textonly">
+		<h1>VBA Macros</h1>
+		<p>When I first started at Financial Planning and Information Services (FPIS), I had a set of portfolios to update the numbers on for each month. Once the numbers were updated, the file was given to a colleague to make recommendations on what securities to buy and sell (More on this shortly). My work was often repetitive and tedious, but I recalled a saying from the professor in my C++ class. “If you’re doing the same task over and over, it can be simplified into a program”.</p>
+		<p>I had heard of macros in Microsoft Excel, but had never come across a situation where they would be useful to me. With my previous coding experience and a little playing around, I was able to replicate one part of my work process. And then another. The time I saved with my work went towards learning more VBA, adding features to each macro, and refining my programming skills, and soon I had expanded the one macro and developed others to nearly automate all of my work.</p>
+		<h2>Update Process</h2>
+		<p class="firstpara">The macros I had initially developed (<a href="Update Sample.zip">link to download here</a>) are run when the client’s portfolio sheet is open, along with the exported .csv files from each of their TD Ameritrade accounts, and the process is split into three parts:</p>
+		<ol>
+			<li id="listfirst">The first macro (AllTDSheets) formats each sheet for printing (used as a double-check), deletes unnecessary transactions (only keeping the money in and out since that is what was reported to the clients), and copies the account position values onto the client’s portfolio sheet. If new funds are added or old ones are removed, the macro will adjust the portfolio sheet as necessary.</li>
+			<li class="innerlist">The second macro (Dist) asks for the total money in and/or out of the portfolio, ensures that necessary formulas on the sheets are correct, and adds a new line with formulas for the client’s portfolio performance. It then calls the third macro before printing off each sheet.</li>
+			<li>The last part (Grid_Sort) makes sure the Grid sheet is formatted correctly, and then sorts each sector alphabetically. It then makes sure the total equities match between the Grid sheet and the Portfolio sheet before returning to the second Macro to print.</li>
+		</ol>
+		<h2>Client Report</h2>
+		<p class="firstpara">Eventually, FPIS bought new software for managing our clients and moved away from manually updating portfolios in Microsoft Excel. This new software was also able to recommend trades, so the next step was using that data to automate the letter we send out to our clients. Using an exported .csv file with the recommended trades, a report is created by organizing the data points into a document that is easily legible. An example of this can be <a href="Report Sample.zip">downloaded here</a></p>
+	</div>
+ </main>
+ 
+ <footer>
+  Copyright &copy; 2019 Steven Yungwirth
+ </footer>
+</body>
+
+</html>
